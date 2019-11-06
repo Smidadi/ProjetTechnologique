@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/original"
+        android:title="ORIGINAL" />
+    <item
+        android:id="@+id/grey"
+        android:title="GREY ME" />
+    <item
+        android:id="@+id/random"
+        android:title="RAND ME" />
+    <item
+        android:id="@+id/red"
+        android:title="JUST RED" />
+    <item
+        android:id="@+id/contrast"
+        android:title="CONTRASTE" />
+</menu>
