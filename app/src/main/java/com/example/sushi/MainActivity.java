@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
 
                 popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     public boolean onMenuItemClick(MenuItem item) {
+                        ImageView iv = findViewById(R.id.sushiImg);
                         if (item.getTitle().equals("ORIGINAL")) {
                             img.setPixels(mon_image, 0, w, 0, 0, w, h);
                             dessinHisto(img, hR, hG, hB);
@@ -82,6 +83,7 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
                             contraste(img);
                             dessinHisto(img, hR, hG, hB);
                         }
+                        iv.setImageBitmap(img);
                         return true;
                     }
                 });
